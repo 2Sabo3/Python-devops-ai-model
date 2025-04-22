@@ -1,4 +1,4 @@
-# 🛠️ DevOps Generator CLI (with Ollama AI)
+#  DevOps Generator CLI (with Ollama AI)
 
 This is a Python-based CLI tool that leverages [Ollama](https://ollama.com) models (like LLaMA3, Mistral, etc.) running locally to auto-generate DevOps infrastructure files such as:
 
@@ -13,7 +13,7 @@ This is a Python-based CLI tool that leverages [Ollama](https://ollama.com) mode
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Uses **locally running Ollama models** via the `ollama` Python package
 - Prompts for essential input only
@@ -22,8 +22,29 @@ This is a Python-based CLI tool that leverages [Ollama](https://ollama.com) mode
 - Follows DevOps best practices by default
 
 ---
+## Prerequiste
+Installing Ollama
+```
+Download and Install Ollama
 
-## 📦 Requirements
+# For Linux
+curl -fsSL https://ollama.com/install.sh | sh
+
+# For MacOS
+brew install ollama
+```
+
+Start Ollama Service
+```
+ollama serve
+```
+
+Pull Llama3 Model
+```
+ollama pull llama3.2:1b
+```
+
+##  Requirements
 
 - Python 3.7+
 - Local [Ollama](https://ollama.com) instance running (e.g., `ollama run llama3`)
@@ -35,7 +56,7 @@ pip install -r requirements.txt
 requirements.txt
 ollama
 PyYAML
-🧑‍💻 Usage
+Usage
 ```
 python devops_gen.py
 ```
@@ -78,10 +99,10 @@ helm_chart.yaml
 
 Output is also prettified automatically if it's YAML or JSON.
 
-🔒 Security
+Security
 All generation happens locally. No data is sent over the internet — you're using your own locally running Ollama model.
 
-🧠 Ideas for Expansion
+Ideas for Expansion
 Add support for multiple files per run (with --all)
 
 Convert to devgen CLI tool with argparse
