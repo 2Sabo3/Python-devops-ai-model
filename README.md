@@ -36,10 +36,10 @@ requirements.txt
 ollama
 PyYAML
 🧑‍💻 Usage
-Run the script:
+```
 bash
 python devops_gen.py
-
+```
 
 You’ll be prompted to choose one of the following:
 1. Dockerfile
