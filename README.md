@@ -31,25 +31,17 @@ This is a Python-based CLI tool that leverages [Ollama](https://ollama.com) mode
 
 ```bash
 pip install -r requirements.txt
+```
 requirements.txt
-
-nginx
-Copy
-Edit
 ollama
 PyYAML
 🧑‍💻 Usage
 Run the script:
-
 bash
-Copy
-Edit
 python devops_gen.py
-You’ll be prompted to choose one of the following:
 
-markdown
-Copy
-Edit
+
+You’ll be prompted to choose one of the following:
 1. Dockerfile
 2. BuildSpec (buildspec.yml)
 3. Terraform
