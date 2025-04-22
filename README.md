@@ -37,7 +37,6 @@ ollama
 PyYAML
 🧑‍💻 Usage
 ```
-bash
 python devops_gen.py
 ```
 
