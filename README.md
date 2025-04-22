@@ -61,6 +61,7 @@ Usage
 python devops_gen.py
 ```
 
+## Working
 You’ll be prompted to choose one of the following:
 1. Dockerfile
 2. BuildSpec (buildspec.yml)
@@ -99,16 +100,5 @@ helm_chart.yaml
 
 Output is also prettified automatically if it's YAML or JSON.
 
-Security
+## Security
 All generation happens locally. No data is sent over the internet — you're using your own locally running Ollama model.
-
-Ideas for Expansion
-Add support for multiple files per run (with --all)
-
-Convert to devgen CLI tool with argparse
-
-Include option to preview without saving
-
-Add language-specific Docker templates
-
-Export Helm charts as a folder structure
